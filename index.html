@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuestro Amor 💕</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- LOGIN -->
+  <div id="login-screen" class="login-screen">
+    <div class="login-card">
+      <h1 class="login-title">💕 Nuestro Amor</h1>
+      <p class="login-subtitle">Solo quien ama de verdad puede entrar 🤍</p>
+      <input type="text" id="username" placeholder="Usuario" autocomplete="off" />
+      <input type="password" id="password" placeholder="Contraseña" />
+      <button id="login-btn">Entrar al amor 💖</button>
+      <p id="login-error" class="login-error"></p>
+    </div>
+  </div>
+  <!-- MAIN APP -->
+  <div id="main-app" class="main-app hidden">
+    <!-- Corazones flotantes -->
+    <div id="floating-hearts" class="floating-hearts"></div>
+    <!-- Interactive layer (click hearts) -->
+    <div id="interactive-layer" class="interactive-layer"></div>
+    <!-- NAV -->
+    <nav class="nav">
+      <button class="nav-link active" data-section="inicio">💕 Inicio</button>
+      <button class="nav-link" data-section="galeria">📸 Galería</button>
+      <button class="nav-link" data-section="cartas">💌 Cartas</button>
+      <button class="nav-link" data-section="contador">⏰ Contador</button>
+    </nav>
+    <!-- SECCIONES -->
+    <main class="content">
+      <!-- INICIO -->
+      <section id="sec-inicio" class="section active">
+        <h1 class="hero-title">Bienvenida mi amor 💖</h1>
+        <p class="hero-text">Este espacio es solo para ti, para recordarte lo mucho que te amo cada día.</p>
+        <div class="hero-heart">❤️</div>
+      </section>
+      <!-- GALERÍA -->
+      <section id="sec-galeria" class="section">
+        <h2 class="section-title">📸 Nuestra Galería</h2>
+        <p class="section-desc">Toca una foto para ver un mensaje especial 💕</p>
+        <div class="gallery-grid">
+          <!--
+            ========================================
+            📷 INSTRUCCIONES PARA CAMBIAR FOTOS:
+            ========================================
+            1. Crea una carpeta llamada "fotos" junto a este archivo
+            2. Pon tus fotos ahí (foto1.jpg, foto2.jpg, etc.)
+            3. Cambia el src de cada <img> abajo por la ruta de tu foto
+               Ejemplo: src="fotos/mi-foto.jpg"
+            ========================================
+          -->
+          <div class="gallery-card" data-msg="Aquí comenzó todo 💕">
+            <img src="https://placehold.co/400x400/FFD6E0/d63384?text=Foto+1" alt="Foto 1" />
+          </div>
+          <div class="gallery-card" data-msg="Mi momento favorito contigo 🥰">
+            <img src="https://placehold.co/400x400/E0C3FC/7c3aed?text=Foto+2" alt="Foto 2" />
+          </div>
+          <div class="gallery-card" data-msg="Tu sonrisa ilumina mi mundo ✨">
+            <img src="https://placehold.co/400x400/FFDDB7/e67e22?text=Foto+3" alt="Foto 3" />
+          </div>
+          <div class="gallery-card" data-msg="Juntos somos perfectos 💞">
+            <img src="https://placehold.co/400x400/B5EAD7/27ae60?text=Foto+4" alt="Foto 4" />
+          </div>
+          <div class="gallery-card" data-msg="Te amo más cada día 💗">
+            <img src="https://placehold.co/400x400/C9B1FF/6c5ce7?text=Foto+5" alt="Foto 5" />
+          </div>
+          <div class="gallery-card" data-msg="Eres mi persona favorita 🌹">
+            <img src="https://placehold.co/400x400/FFB7C5/e84393?text=Foto+6" alt="Foto 6" />
+          </div>
+        </div>
+      </section>
+      <!-- CARTAS -->
+      <section id="sec-cartas" class="section">
+        <h2 class="section-title">💌 Nuestras Cartas</h2>
+        <div class="card-box">
+          <textarea id="carta-input" placeholder="Escríbele algo bonito desde el corazón..." rows="4"></textarea>
+          <button id="guardar-carta">Guardar carta 💕</button>
+        </div>
+        <div id="cartas-list" class="cartas-list"></div>
+      </section>
+      <!-- CONTADOR -->
+      <section id="sec-contador" class="section">
+        <h2 class="section-title">⏰ Nuestro Tiempo Juntos</h2>
+        <div class="contador-box">
+          <div class="contador-item">
+            <span id="cnt-dias" class="cnt-num">0</span>
+            <span class="cnt-label">Días</span>
+          </div>
+          <div class="contador-item">
+            <span id="cnt-horas" class="cnt-num">0</span>
+            <span class="cnt-label">Horas</span>
+          </div>
+          <div class="contador-item">
+            <span id="cnt-minutos" class="cnt-num">0</span>
+            <span class="cnt-label">Minutos</span>
+          </div>
+          <div class="contador-item">
+            <span id="cnt-segundos" class="cnt-num">0</span>
+            <span class="cnt-label">Segundos</span>
+          </div>
+        </div>
+        <p class="contador-desde">Desde el 15 de mayo de 2025 💕</p>
+      </section>
+    </main>
+  </div>
+  <!-- Modal galería -->
+  <div id="gallery-modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close">✕</button>
+      <img id="modal-img" src="" alt="Foto" />
+      <p id="modal-msg" class="modal-msg"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
