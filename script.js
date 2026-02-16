@@ -14,6 +14,21 @@ const frases = [
   'Tu sonrisa me enamora 😍',
   'Juntos por siempre 💞',
 ];
+const CARTAS_FIJAS = [
+  {
+    text: "Gracias por existir en mi vida 💖",
+    date: "15 mayo 2025"
+  },
+  {
+    text: "Prometo cuidarte siempre 🥰",
+    date: "20 junio 2025"
+  },
+  {
+    text: "Eres mi sueño hecho realidad ✨",
+    date: "Hoy"
+  }
+];
+
 // ===== LOGIN =====
 const loginScreen = document.getElementById('login-screen');
 const mainApp = document.getElementById('main-app');
@@ -117,50 +132,19 @@ function initGallery() {
 }
 // ===== CARTAS =====
 function initCartas() {
-  const input = document.getElementById('carta-input');
-  const btn = document.getElementById('guardar-carta');
   const list = document.getElementById('cartas-list');
-  let cartas = JSON.parse(localStorage.getItem('love-messages') || '[]');
-  renderCartas();
-  btn.addEventListener('click', () => {
-    const text = input.value.trim();
-    if (!text) return;
-    const carta = {
-      text,
-      date: new Date().toLocaleDateString('es-ES', {
-        day: 'numeric',
-        month: 'long',
-        year: 'numeric',
-      }),
-    };
-    cartas.unshift(carta);
-    localStorage.setItem('love-messages', JSON.stringify(cartas));
-    input.value = '';
-    renderCartas();
+
+  CARTAS_FIJAS.forEach(c => {
+    const div = document.createElement('div');
+    div.className = 'carta-item';
+    div.innerHTML = `
+      <p>${c.text}</p>
+      <p class="carta-date">📅 ${c.date}</p>
+    `;
+    list.appendChild(div);
   });
-  function renderCartas() {
-    list.innerHTML = '';
-    if (cartas.length === 0) {
-      list.innerHTML = '<p style="text-align:center;color:#8e6a8a;font-size:0.9rem;">Aún no hay cartas... escribe la primera 💌</p>';
-      return;
-    }
-    cartas.forEach((c, i) => {
-      const div = document.createElement('div');
-      div.className = 'carta-item';
-      div.innerHTML = `
-        <p>${escapeHtml(c.text)}</p>
-        <p class="carta-date">📅 ${c.date}</p>
-        <button class="carta-delete" title="Eliminar">✕</button>
-      `;
-      div.querySelector('.carta-delete').addEventListener('click', () => {
-        cartas.splice(i, 1);
-        localStorage.setItem('love-messages', JSON.stringify(cartas));
-        renderCartas();
-      });
-      list.appendChild(div);
-    });
-  }
 }
+
 function escapeHtml(text) {
   const div = document.createElement('div');
   div.textContent = text;
