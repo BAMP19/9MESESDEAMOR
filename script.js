@@ -1,32 +1,135 @@
 // ===== CREDENCIALES =====
-const USUARIO = 'miamor';
-const CLAVE = '9meses';
+const USUARIO = 'Snofi';
+const CLAVE = 'teadoro';
 // ===== FECHA INICIO (cambiar aquí) =====
 const FECHA_INICIO = new Date('2025-05-15T00:00:00');
 // ===== FRASES ROMÁNTICAS =====
 const frases = [
-  'Te amo con todo mi corazón 💕',
-  'Eres lo mejor de mi vida 🌹',
-  'Contigo todo es más bonito ✨',
-  'Mi mundo eres tú 💖',
-  'Cada día te amo más 🥰',
-  'Eres mi sueño hecho realidad 💫',
-  'Tu sonrisa me enamora 😍',
-  'Juntos por siempre 💞',
+  '💕Te amo con todo mi corazón 💕',
+  '💕Eres lo mejor de mi vida 💕',
+  '💕Contigo todo es más bonito 💕',
+  '💕Mi mundo eres tú 💕',
+  '💕Cada día te amo más 💕',
+  '💕Eres mi sueño hecho realidad 💕',
+  '💕Tu sonrisa me enamora 💕',
+  '💕Juntos por siempre 💕',
 ];
 const CARTAS_FIJAS = [
   {
-    text: "Gracias por existir en mi vida 💖",
-    date: "15 mayo 2025"
+    text: "Mi lindo",
+    date: "13 marzo 2025"
   },
   {
-    text: "Prometo cuidarte siempre 🥰",
-    date: "20 junio 2025"
+    text: "Estoy muy orgullosa del hombre tan increible que eres",
+    date: "2 abril 2025"
   },
   {
-    text: "Eres mi sueño hecho realidad ✨",
-    date: "Hoy"
-  }
+    text: "Te admiro y te amo y te adoro",
+    date: "2 abril 2025"
+  },
+  {
+    text: "te adoro con mi alma",
+    date: "20 abril 2025"
+  },
+  {
+    text: "me haces mucho bien",
+    date: "27 abril 2025"
+  },
+  {
+    text: "no olvides que eres maravilloso",
+    date: "27 abril 2025"
+  },
+  {
+    text: "amor tu eres lo mas importante para mi",
+    date: "1 mayo 2025"
+  },
+  {
+    text: "11:11",
+    date: "2 mayo 2025"
+  },
+  {
+    text: "poechito mi niño precioso bonito hermoso",
+    date: "28 mayo 2025",
+    text: "cuando me dijiste mi niño precioso, mi corazon se sintio muy bien y senti muy bonito"
+  },
+  {
+    text: "11:tengo un novio tan preciosooo",
+    date: "1 junio 2025"
+  },
+  {
+    text: "te amo mi cielo",
+    date: "13 junio 2025"
+  },
+  {
+    text: "mi cama huele a ti",
+    date: "15 junio 2025"
+  },
+  {
+    text: "precioso mío",
+    date: "15 junio 2025"
+  },
+  {
+    text: "siempre querré llenarte de amor y felicidad",
+    date: "6 julio 2025"
+  },
+  {
+    text: "mi amor bonito",
+    date: "21 julio 2025"
+  },
+  {
+    text: "siempre estaré ahí para escucharte",
+    date: "24 julio 2025"
+  },
+  {
+    text: "que cuando vamos a motelear",
+    date: "24 julio 2025",
+    text: "este mensaje grrr"
+  },
+  {
+    text: "de verdad eres lo mejor que me ha pasadp",
+    date: "27 julio 2025"
+  },
+  {
+    text: "y que eres mi todo todito todo",
+    date: "28 julio 2025"
+  },
+  {
+    text: "me iluminas la vida",
+    date: "3 agosto 2025"
+  },
+  {
+    text: "amor de mi vida",
+    date: "3 agosto 2025"
+  },
+  {
+    text: "te amo demasiado mi cielo",
+    date: "20 agosto 2025"
+  },
+  {
+    text: "mi vida",
+    date: "18 septiembre 2025"
+  },
+  {
+    text: "pero yo te dije que queria todo contigo",
+    date: "24 septiembre 2025"
+  },
+  {
+    text: "estoy orgulloda de el hombre que eres",
+    date: "4 noviembre 2025"
+  },
+  {
+    text: "papi chulo",
+    date: "10 diceimbre 2025"
+  },
+  {
+    text: "Eres demasiado importante para mí y no quiero que te sientas mal, sobre todo hoy, quiero que estés feliz y disfrutes de celebrar tu pumpleaños y obvio no eres difícil de querer pote yo me enamoré de ti muy fácilmente jsjsjssjsj y me encanta todo de ti.Te amo mucho y aunque no va a ser como deseaba que fuera intentaré hacer que sea un nindo dia",
+    date: "19 diceimbre 2025",
+    text: "este y el mensaje de cumpleaños, los atesoro mucho"
+  },
+  {
+    text: "Estos mensajes y muchos mas, me hacen sentir lleno de amor, y por esho te agradezco mi niña hermosa",
+  },
+  
 ];
 
 // ===== LOGIN =====
