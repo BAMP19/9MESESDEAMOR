@@ -371,3 +371,10 @@ body {
   .cnt-num { font-size: 2rem; }
   .contador-item { min-width: 70px; padding: 14px 16px; }
 }
+.foto-pie{
+  text-align:center;
+  padding:8px 6px;
+  font-size:.85rem;
+  color:#8e6a8a;
+  background:rgba(255,255,255,.7);
+}
