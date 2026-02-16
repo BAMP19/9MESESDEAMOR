@@ -48,7 +48,7 @@ const CARTAS_FIJAS = [
     date: "2 mayo 2025"
   },
   {
-    text: "poechito mi niño precioso bonito hermoso.  \ncuando me dijiste mi niño precioso, mi corazon se sintio muy bien y senti muy bonito",
+    text: "poechito mi niño precioso bonito hermoso.  \n\ncuando me dijiste mi niño precioso, mi corazon se sintio muy bien y senti muy bonito",
     date: "28 mayo 2025",
   },
   {
@@ -120,8 +120,8 @@ const CARTAS_FIJAS = [
     date: "10 diceimbre 2025"
   },
   {
-    text: "Eres demasiado importante para mí y no quiero que te sientas mal, sobre todo hoy, quiero que estés feliz y disfrutes de celebrar tu pumpleaños y obvio no eres difícil de querer pote yo me enamoré de ti muy fácilmente jsjsjssjsj y me encanta todo de ti.Te amo mucho y aunque no va a ser como deseaba que fuera intentaré hacer que sea un nindo dia \neste y el mensaje de cumpleaños, los atesoro mucho",
-    date: "19 diceimbre 2025"
+    text: "Eres demasiado importante para mí y no quiero que te sientas mal, \nsobre todo hoy, quiero que estés feliz y disfrutes de celebrar tu pumpleaños y obvio no eres difícil de querer pote yo me enamoré de ti muy fácilmente jsjsjssjsj y me encanta todo de ti.\nTe amo mucho y aunque no va a ser como deseaba que fuera intentaré hacer que sea un nindo dia \n\neste y el mensaje de cumpleaños, los atesoro mucho",
+    date: "19 diciembre 2025"
   },
   {
     text: "Estos mensajes y muchos mas, me hacen sentir lleno de amor, y por esho te agradezco mi niña hermosa",
