@@ -371,10 +371,20 @@ body {
   .cnt-num { font-size: 2rem; }
   .contador-item { min-width: 70px; padding: 14px 16px; }
 }
-.foto-pie{
+.carta-item{
+  background: rgba(255,255,255,0.8);
+  border-radius: 20px;
+  padding: 20px;
+  border: 2px solid #f3b5cf;
+  box-shadow: 0 6px 15px rgba(214,51,132,.2);
+}
+
+.carta-item p{
   text-align:center;
-  padding:8px 6px;
-  font-size:.85rem;
-  color:#8e6a8a;
-  background:rgba(255,255,255,.7);
+  font-size:1rem;
+}
+
+.carta-date{
+  text-align:center;
+  margin-top:10px;
 }
